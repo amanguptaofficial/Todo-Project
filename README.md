@@ -39,7 +39,7 @@ This is a Todo Project, Here we can create our new todo and We can see the all T
 4. Set up environment variables:
    ```sh
    PORT:3000
-   Database_url:"mongodb+srv://amangupta:Opx0adQCbdyU0RpE@aman.id6td9f.mongodb.net/projectOne"
+   Database_url:Use Your Cluster
 
 5. Go to the routs folder and insdie the routes folder go to the TodoRouts.js and  check all endpoints to check all the API's 
 
