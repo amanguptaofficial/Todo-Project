@@ -9,7 +9,7 @@ const PORT = 3000; // here we are giving the port number0
 
 mongoose
   .connect(
-    "mongodb+srv://amangupta:Opx0adQCbdyU0RpE@aman.id6td9f.mongodb.net/projectOne"
+    "Give your cluster Url",{useNewUrlParser:true}
   ) // Here we are connect our mongoDB and this return a promise we are handling the promise by using then() If it resolved succes then then() executed
   .then(() => {
     console.log("MongoDB Connected Successfully...");

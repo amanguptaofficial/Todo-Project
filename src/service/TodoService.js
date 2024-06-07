@@ -46,7 +46,7 @@ async function retrieveAllTodos() {
 async function retrieveSingleTodoById(id) {
   try {
     if(!validation.isValidObjectId(id)) return {code :400,msg: "Please Give me the Correct ObjectId",data:{}};
-    const retrieveSingleData = await todo.findById({ _id: id }).then((data)=>data);
+    const retrieveSingleData = await todo.findById({ _id: id })
    if (!retrieveSingleData) return { code: 400, msg: "Todo is not present in database", data: {} };
    if(retrieveSingleData.isDeleted) return {code:400,msg:"This Todo is deleted you can not see",data:{}};
     const data = { code: 200, msg: "success", data: retrieveSingleData };
